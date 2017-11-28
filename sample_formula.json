@@ -1,0 +1,15 @@
+/*https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math*/
+{
+  "monita_formula": {
+    "titik_ukur": "12345",
+    "parameter": [
+      "select '3' from dual",
+      "select '25' from dual",
+      "select '2' from dual",
+      "select '1024' from dual"
+    ],
+    "formula": "var a = :p1 + Math.sqrt(:p2) + Math.pow(:p1,:p3) + Math.log(:p4) / Math.log(:p3);
+                var b = a+:p3;
+                return b;"
+  }
+}
